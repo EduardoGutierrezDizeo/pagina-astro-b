@@ -16,59 +16,36 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<header>
-			<div class="top-header container">
-				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="logo mercadolibre">
-				<div class="buscador">
-					<input type="text" placeholder="Encuentra lo que quieras acá">
-					<button type="submit">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+	<body class="m-0 p-0 bg-[rgb(219,219,219)]">
+		<header class="h-[80px] bg-[rgb(255,241,43)] pt-3">
+			<div class="top-header container mx-auto max-w-[1200px] grid grid-cols-3">
+				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="logo mercadolibre" class="w-[120px]">
+				<div class="buscador flex items-center px-2.5 py-2.5">
+					<input type="text" placeholder="Encuentra lo que quieras acá" class="w-4/5 h-[32px] rounded-l-md border border-white outline-none box-border">
+					<button type="submit" class="w-[32px] h-[32px] bg-white border-none">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 							<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-						  </svg>
-						  
+						</svg>
 					</button>
 				</div>
-				
 				<p>publicidad</p>
 			</div>
-		
 		</header>
 
-		<div class="banner">
+		<div class="banner h-[280px] bg-gradient-to-b from-[rgb(255,241,43)] to-[rgb(219,219,219)]"></div>
 
+		<div class="cards container mx-auto max-w-[1200px] flex justify-center gap-5 -mt-[80px] h-[180px]">
+			<div class="card flex-grow bg-white rounded-lg">1</div>
+			<div class="card flex-grow bg-white rounded-lg">2</div>
+			<div class="card flex-grow bg-white rounded-lg">3</div>
+			<div class="card flex-grow bg-white rounded-lg">4</div>
+			<div class="card flex-grow bg-white rounded-lg">5</div>
+			<div class="card flex-grow bg-white rounded-lg">6</div>
 		</div>
-
-		<div class="cards container">
-
-			<div class="card">
-				1
-			</div>
-
-			<div class="card">
-				2
-			</div>
-
-			<div class="card">
-				3
-			</div>
-
-			<div class="card">
-				4
-			</div>
-
-			<div class="card">
-				5
-			</div>
-
-			<div class="card">
-				6
-			</div>
-
-		</div>
-		<!-- <slot /> -->
 	</body>
 </html>
+
+<!--  
 <style>
 	html, body{
 		margin: 0;
@@ -142,3 +119,4 @@ const { title } = Astro.props;
 	}
 
 </style>
+-->
